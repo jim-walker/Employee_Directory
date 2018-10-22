@@ -39,3 +39,15 @@ const employeeList = [{
   phoneNum: '222-789-5231'
 }
 ];
+const render = function() {
+  $('.content').empty();
+
+  for( let i = 0; i < employeeList.length; i++ ) {
+    $('.content').append(`<div class="card">`);
+    $('.content').append(`<p>${employeeList[i].name}</p>`);
+    $('.content').append(`<p>${employeeList[i].officeNum}</p>`);
+    $('.content').append(`<p>${employeeList[i].phoneNum}</p>`);
+    $('.content').append(`</div>`);
+  }
+}
+render();
