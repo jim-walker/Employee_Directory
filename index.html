@@ -18,17 +18,28 @@
         <button type="button" class="btn btn-dark btn-lg w-100" >
           <span class="fa fa-address-book-o" ></span>
         </button>
-        <button type="button" class="btn btn-dark w-100">VIEW</button>
-        <button type="button" class="btn btn-dark w-100">ADD</button>
-        <button type="button" class="btn btn-dark w-100">VERIFY</button>
-        <button type="button" class="btn btn-dark w-100">UPDATE</button>
-        <button type="button" class="btn btn-dark w-100">DELETE</button>
+        <button type="button" class="btn btn-dark w-100" id="viewButton">VIEW</button>
+        <button type="button" class="btn btn-dark w-100" id="addButton">ADD</button>
+        <button type="button" class="btn btn-dark w-100" id="verifyButton">VERIFY</button>
+        <button type="button" class="btn btn-dark w-100" id="updateButton">UPDATE</button>
+        <button type="button" class="btn btn-dark w-100" id="deleteButton">DELETE</button>
       </div>
       <div class="col-sm-8 bg-light">
-        <div class="row justify-content-center py-3 display-none">
-          <input type="text" class="form w-25" id="searchName" placeholder="Employee">
+        <div class="row justify-content-center py-3 display-none" id=addEmployee>
+          <input type="text" class="form w-25 mx-1" id="searchName" placeholder=" Employee">
+          <input type="text" class="form w-25 mx-1" id="searchName" placeholder=" Office Num">
+          <input type="text" class="form w-25 mx-1" id="searchName" placeholder=" Phone">
+          <button type="button" class="btn btn-outline-dark btn-lg mx-1" >
+            <span class="fa fa-plus" ></span>
+          </button>
         </div>
-        <div class="row">
+        <div class="row justify-content-center py-3 display-none" id="searchEmployee">
+          <input type="text" class="form w-25 mx-1" id="searchName" placeholder="Employee">
+          <button type="button" class="btn btn-outline-dark btn-lg mx-1"  >
+            <span class="fa fa-search" ></span>
+          </button>
+        </div>
+        <div class="row" id="listContent">
           <div class="content"></div>
         </div>
       </div>

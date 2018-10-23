@@ -1,3 +1,27 @@
+
+const showAdd = function() {
+  $('#addEmployee').show();
+}
+const showSearch = function() {
+  $('#searchEmployee').show();
+}
+const showContent = function() {
+  $('#listContent').show();
+}
+const hideAdd = function() {
+  $('#addEmployee').hide();
+}
+const hideSearch = function() {
+  $('#searchEmployee').hide();
+}
+const hideContent = function() {
+  $('#listContent').hide();
+}
+
+hideAdd();
+hideSearch();
+hideContent();
+
 const employeeList = [{
   name: 'Jan',
   officeNum: 1,
@@ -39,6 +63,7 @@ const employeeList = [{
   phoneNum: '222-789-5231'
 }
 ];
+
 const render = function() {
   $('.content').empty();
 
@@ -51,3 +76,7 @@ const render = function() {
   }
 }
 render();
+
+$('#viewButton').on('click', showContent);
+$('#addButton').on('click', showAdd);
+$('#verifyButton').on('click', showSearch);
