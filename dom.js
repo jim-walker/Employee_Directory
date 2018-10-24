@@ -63,18 +63,6 @@ const $ = function (selector) {
     }
   }
 
-  const show = function() {
-    for (let i = 0; i < nodeList.length; i++) {
-      nodeList[i].style.display = '';
-  }
-}
-
-  const hide = function() {
-    for (let i = 0; i < nodeList.length; i++) {
-      nodeList[i].style.display = 'none';
-  }
-}
-
   return {
     text: text,
     html: html,
@@ -86,7 +74,5 @@ const $ = function (selector) {
     prepend: prepend,
     on: on,
     val: val,
-    show: show,
-    hide: hide
   };
 }

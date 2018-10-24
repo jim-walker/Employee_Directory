@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="./style.css">
   <title>Employee Directory SPA</title>
 </head>
-
 <body>
   <div class="containter-fluid">
     <div class="row justify-content-center">
@@ -25,18 +24,21 @@
         <button type="button" class="btn btn-dark w-100" id="deleteButton">DELETE</button>
       </div>
       <div class="col-sm-8 bg-light">
-        <div class="row justify-content-center py-3 display-none" id=addEmployee>
-          <input type="text" class="form w-25 mx-1" id="searchName" placeholder=" Employee">
-          <input type="text" class="form w-25 mx-1" id="searchName" placeholder=" Office Num">
-          <input type="text" class="form w-25 mx-1" id="searchName" placeholder=" Phone">
-          <button type="button" class="btn btn-outline-dark btn-lg mx-1" >
+        <div class="row justify-content-center py-3" id="inputRow">
+          <input type="text" class="form w-25 mx-1" id="nameInput" placeholder=" Employee">
+          <input type="text" class="form w-25 mx-1" id="officeInput" placeholder=" Office Num">
+          <input type="text" class="form w-25 mx-1" id="phoneInput" placeholder=" Phone">
+          <button type="button" class="btn btn-outline-dark btn-lg mx-1" id="plusButton" >
             <span class="fa fa-plus" ></span>
           </button>
-        </div>
-        <div class="row justify-content-center py-3 display-none" id="searchEmployee">
-          <input type="text" class="form w-25 mx-1" id="searchName" placeholder="Employee">
-          <button type="button" class="btn btn-outline-dark btn-lg mx-1"  >
+          <button type="button" class="btn btn-outline-dark btn-lg mx-1" id="editButton" >
+            <span class="fa fa-edit" ></span>
+          </button>
+          <button type="button" class="btn btn-outline-dark btn-lg mx-1" id="searchButton"  >
             <span class="fa fa-search" ></span>
+          </button>
+          <button type="button" class="btn btn-outline-dark btn-lg mx-1" id="minusButton"  >
+            <span class="fa fa-minus" ></span>
           </button>
         </div>
         <div class="row" id="listContent">
