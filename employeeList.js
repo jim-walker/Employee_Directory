@@ -80,8 +80,7 @@ const employeeList = [{
   phoneNum: '789-766-5675'
 },
 {
-  name: 'Ty',
-  officeNum: 211,
+  name: 'Ty', officeNum: 211,
   phoneNum: '789-766-7865'
 },
 {
@@ -94,11 +93,14 @@ const employeeList = [{
 const render = function() {
   $('.content').empty();
   for( let i = 0; i < employeeList.length; i++ ) {
-    $('.content').append(`<div class="card">`);
-    $('.content').append(`<p>${employeeList[i].name}</p>`);
-    $('.content').append(`<p>${employeeList[i].officeNum}</p>`);
-    $('.content').append(`<p>${employeeList[i].phoneNum}</p>`);
-    $('.content').append(`</div>`);
+    $('.content').append(`
+    <div class="card border-dark m-1 p-1">
+      <div class="card-header">
+        <p>Name: ${employeeList[i].name}</p>
+        <div class="card-body">
+          <p>Office: ${employeeList[i].officeNum}</p>
+          <p>Phone: ${employeeList[i].phoneNum}</p>
+    `);
   }
 }
 
