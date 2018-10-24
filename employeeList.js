@@ -129,7 +129,7 @@ const deleteEmployee = function() {
 }
 const verifyEmployee = function() {
   const searchNameVal = $('#nameInput').val();
-  const searchIndex = arrayObjectIndexOf(employeeList,searchNameVal,'name');
+  const searchIndex = employeeList.findIndex((obj => obj.name == searchNameVal));
   $('.content').empty();
   if (searchIndex > -1) {
     $('.content').append(`<p>Yes</p>`);
